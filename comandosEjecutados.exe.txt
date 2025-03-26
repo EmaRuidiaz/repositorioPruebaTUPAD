@@ -1,0 +1,238 @@
+Microsoft Windows [Versión 10.0.26100.3194]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\ema_r\Documents>git clone https://github.com/EmaRuidiaz/repositorioPruebaTUPAD.git
+Cloning into 'repositorioPruebaTUPAD'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+C:\Users\ema_r\Documents>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\ema_r\Documents>ls
+"ls" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\ema_r\Documents>ld
+"ld" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\ema_r\Documents>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 3C1D-0246
+
+ Directorio de C:\Users\ema_r\Documents
+
+26/03/2025  17:53    <DIR>          .
+19/03/2025  21:05    <DIR>          ..
+08/11/2024  18:33             1.765 Acceso directo a Documentos (OneDrive - Personal).lnk
+08/11/2024  20:45    <DIR>          apache-maven-3.9.9-bin
+14/12/2024  02:16    <DIR>          My Games
+26/03/2025  17:55    <DIR>          repositorioPruebaTUPAD
+20/12/2024  20:23    <DIR>          Rockstar Games
+26/03/2025  17:54    <DIR>          TUPAD
+               1 archivos          1.765 bytes
+               7 dirs  343.415.861.248 bytes libres
+
+C:\Users\ema_r\Documents>cd repositorioPruebaTUPAD
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>ls
+"ls" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mi-archivo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git add .
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git commit -m "primer commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ema_r@EMARUIDIAZPC.(none)')
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git push origin main
+info: please complete authentication in your browser...
+Everything up-to-date
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git config --global user.email "emafruidiaz@gmail.com"
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git config --global user.name "Emanuel Ruidiaz"
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git commit -m "primer commit"
+[main 4db93bc] primer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mi-archivo.txt
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/EmaRuidiaz/repositorioPruebaTUPAD.git
+   3533676..4db93bc  main -> main
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git checkout -b primerBranch
+Switched to a new branch 'primerBranch'
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git status
+On branch primerBranch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   mi-archivo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git add .
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git commit -m "primer branch"
+[primerBranch 528e2f7] primer branch
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git push origin primerBranch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'primerBranch' on GitHub by visiting:
+remote:      https://github.com/EmaRuidiaz/repositorioPruebaTUPAD/pull/new/primerBranch
+remote:
+To https://github.com/EmaRuidiaz/repositorioPruebaTUPAD.git
+ * [new branch]      primerBranch -> primerBranch
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   mi-archivo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git add .
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git commit -m "generando conflictos"
+[main 122d68e] generando conflictos
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 373 bytes | 373.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/EmaRuidiaz/repositorioPruebaTUPAD.git
+   4db93bc..122d68e  main -> main
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git merge primerBranch
+Auto-merging mi-archivo.txt
+CONFLICT (content): Merge conflict in mi-archivo.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   mi-archivo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git add .
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git commit -m "conflicto solucionado manualmente"
+[main a11181e] conflicto solucionado manualmente
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 453 bytes | 453.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/EmaRuidiaz/repositorioPruebaTUPAD.git
+   122d68e..a11181e  main -> main
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git log
+commit a11181e52c01a868abf8837290e2b6c85d32ee9f (HEAD -> main, origin/main, origin/HEAD)
+Merge: 122d68e 528e2f7
+Author: Emanuel Ruidiaz <emafruidiaz@gmail.com>
+Date:   Wed Mar 26 18:06:53 2025 -0300
+
+    conflicto solucionado manualmente
+
+commit 122d68e0a8633371056d9458cf20fbe18e7ed96d
+Author: Emanuel Ruidiaz <emafruidiaz@gmail.com>
+Date:   Wed Mar 26 18:05:02 2025 -0300
+
+    generando conflictos
+
+commit 528e2f707113ecc5735762a052a649fe5117b240 (origin/primerBranch, primerBranch)
+Author: Emanuel Ruidiaz <emafruidiaz@gmail.com>
+Date:   Wed Mar 26 18:00:45 2025 -0300
+
+    primer branch
+
+commit 4db93bcc8dab9fb682edacee66b07d702b540d5d
+Author: Emanuel Ruidiaz <emafruidiaz@gmail.com>
+Date:   Wed Mar 26 17:59:32 2025 -0300
+
+    primer commit
+
+commit 35336763d2cbc56b8d1c6e489d5f57819d626c37
+Author: EmaRuidiaz <ema_ruidiaz@hotmail.com>
+Date:   Wed Mar 26 17:52:58 2025 -0300
+
+    Initial commit
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>git log --grep="primer"
+commit 528e2f707113ecc5735762a052a649fe5117b240 (origin/primerBranch, primerBranch)
+Author: Emanuel Ruidiaz <emafruidiaz@gmail.com>
+Date:   Wed Mar 26 18:00:45 2025 -0300
+
+    primer branch
+
+commit 4db93bcc8dab9fb682edacee66b07d702b540d5d
+Author: Emanuel Ruidiaz <emafruidiaz@gmail.com>
+Date:   Wed Mar 26 17:59:32 2025 -0300
+
+    primer commit
+
+C:\Users\ema_r\Documents\repositorioPruebaTUPAD>
