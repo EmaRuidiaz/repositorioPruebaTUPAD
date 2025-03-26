@@ -1,2 +1,4 @@
 Este es mi primer archivo.
 Este comentario lo hago para generar un conflicto con la rama primerBranch
+Esta es la primer modificación desde otro branch.
+Conflicto solucionado.
